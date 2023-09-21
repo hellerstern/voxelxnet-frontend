@@ -52,11 +52,13 @@
   justify-content: center;
   align-items: center;
   gap: 110px;
+  --webkit-gap: 110px;
 }
 
 @media screen and (max-width: 1200px) {
   .element-main-d .footer .footer-header .group-9 .navlinks-buttons {
     gap: 50px;
+    --webkit-gap: 50px;
   }
 }
 
@@ -65,6 +67,7 @@
   justify-content: center;
   align-items: center;
   gap: 48px;
+  --webkit-gap: 48px;
 }
 @media screen and (max-width: 1000px) {
   .element-main-d .footer .footer-header .group-9 .navlinks-buttons .navlinks {
@@ -75,6 +78,7 @@
 @media screen and (max-width: 1150px) {
   .element-main-d .footer .footer-header .group-9 .navlinks-buttons .navlinks {
     gap: 25px;
+    --webkit-gap: 25px;
   }
 }
 
@@ -83,6 +87,7 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
+  --webkit-gap: 16px;
 }
 
 .element-main-d .footer .footer-header .group-9 .navlinks-buttons .buttons * {
@@ -111,6 +116,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  --webkit-gap: 8px;
 
   color: #FFF;
   font-family: "Manrope", Helvetica;
@@ -151,6 +157,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  --webkit-gap: 8px;
 }
 
 .element-main-d .footer .footer-header .group-9 .navlinks-buttons .navlinks .text-wrapper-headerlink-withicon img {
@@ -177,11 +184,13 @@
   align-items: flex-start;
   justify-content: center;
   gap: 155px;
+  --webkit-gap: 155px;
 }
 
 @media screen and (max-width: 1000px) {
   .element-main-d .footer .main-div .contact .mail-address {
     gap: 50px;
+    --webkit-gap: 50px;
   }
 }
 
@@ -189,6 +198,7 @@
   .element-main-d .footer .main-div .contact .mail-address {
     flex-direction: column;
     gap: 24px;
+    --webkit-gap: 24px;
   }
 }
 
@@ -237,7 +247,8 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 24px
+  gap: 24px;
+  --webkit-gap: 24px;
 }
 
 .element-main-d .footer .main-div .contact .social a:nth-child(1) img {
@@ -302,6 +313,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
+  --webkit-gap: 16px;
   margin-top: 16px;
 }
 
@@ -309,6 +321,7 @@
   .element-main-d .footer .main-div .buyon div {
     justify-content: space-between;
     gap: 0;
+    --webkit-gap: 0;
   }
 }
 
@@ -350,6 +363,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 16px;
+  --webkit-gap: 16px;
   margin-top: 16px;
 }
 
@@ -579,6 +593,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+    --webkit-gap: 12px;
   }
 }
 
@@ -796,6 +811,7 @@
   align-items: flex-start;
   justify-content: center;
   gap: 92px;
+  --webkit-gap: 92px;
   height: 336px;
 }
 
@@ -803,6 +819,7 @@
 @media screen and (max-width: 1100px) {
   .element-main-d .screen-6 .main-div .final-div {
     gap: 50px;
+    --webkit-gap: 50px;
   }
 }
 
@@ -1050,6 +1067,7 @@
   justify-content: flex-start;
   align-items: center;
   gap: 96px;
+  --webkit-gap: 96px;
   padding: 6px;
 
   border-radius: 40px;
@@ -1068,12 +1086,14 @@
 @media screen and (max-width: 1300px) {
   .element-main-d .screen-5 .ecoSlider {
     gap: 50px;
+    --webkit-gap: 50px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .element-main-d .screen-5 .ecoSlider {
     gap: 25px;
+    --webkit-gap: 25px;
     padding-bottom: 24px;
   }
 }
@@ -1143,6 +1163,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  --webkit-gap: 8px;
 
   border-radius: 24px;
   border: 1px solid rgba(234, 234, 255, 0.08);
@@ -1223,6 +1244,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  --webkit-gap: 8px;
 
   border-radius: 24px;
   border: 1px solid rgba(234, 234, 255, 0.08);
@@ -1348,11 +1370,13 @@
   justify-content: center;
   align-items: center;
   gap: 150px;
+  --webkit-gap: 150px;
 }
 
 @media screen and (max-width: 1000px) {
   .element-main-d .screen-4 .main-div .voxdex {
     gap: 50px;
+    --webkit-gap: 50px;
   }
 }
 
@@ -1360,6 +1384,7 @@
   .element-main-d .screen-4 .main-div .voxdex {
     flex-direction: column-reverse;
     gap: 28px;
+    --webkit-gap: 28px;
   }
 }
 
@@ -1454,6 +1479,7 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
+  --webkit-gap: 16px;
   width: min-content;
 }
 
@@ -1481,6 +1507,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  --webkit-gap: 8px;
 
   white-space: nowrap;
   text-decoration: none;
@@ -1495,6 +1522,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  --webkit-gap: 8px;
 
   white-space: nowrap;
   text-decoration: none;
@@ -1520,12 +1548,14 @@
   flex-direction: row-reverse;
   align-items: center;
   gap: 88px;
+  --webkit-gap: 88px;
   margin-top: 80px;
 }
 
 @media screen and (max-width: 1000px) {
   .element-main-d .screen-4 .main-div .voxdao {
     gap: 50px;
+    --webkit-gap: 50px;
   }
 }
 
@@ -1595,6 +1625,7 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
+  --webkit-gap: 16px;
   width: min-content;
 }
 
@@ -1622,6 +1653,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  --webkit-gap: 8px;
 
   white-space: nowrap;
   text-decoration: none;
@@ -1636,6 +1668,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  --webkit-gap: 8px;
 
   white-space: nowrap;
   text-decoration: none;
@@ -1746,6 +1779,7 @@
   align-items: center;
   justify-content: center;
   gap: 95px;
+  --webkit-gap: 95px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1758,6 +1792,7 @@
 @media screen and (max-width: 1200px) {
   .element-main-d .screen-3 .main-div {
     gap: 30px;
+    --webkit-gap: 30px;
   }
 }
 
@@ -1786,6 +1821,7 @@
   justify-content: center;
   align-content: center;
   gap: 16px;
+  --webkit-gap: 16px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1883,6 +1919,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 16px;
+  --webkit-gap: 16px;
 }
 
 .element-main-d .screen-3 .main-div .voxeltech div a:nth-child(1) {
@@ -1912,6 +1949,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  --webkit-gap: 8px;
 
   color: #FFF;
   font-family: "Manrope", Helvetica;
@@ -2013,11 +2051,13 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 120px;
+  --webkit-gap: 120px;
 }
 
 @media screen and (max-width: 1100px) {
   .element-main-d .screen-2 .main-div {
     gap: 50px;
+    --webkit-gap: 50px;
   }
 }
 
@@ -2035,6 +2075,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 16px;
+  --webkit-gap: 16px;
 }
 
 @media screen and (max-width: 550px) {
@@ -2136,6 +2177,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 16px;
+  --webkit-gap: 16px;
 }
 
 .element-main-d .screen-2 .main-div .left-div .certik .certik-main img {
@@ -2230,6 +2272,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  --webkit-gap: 8px;
   
   text-decoration: none;
   padding: 12px 24px;
@@ -2306,6 +2349,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  --webkit-gap: 20px;
 
   position: relative;
 }
@@ -2386,6 +2430,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+  --webkit-gap: 20px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -2422,6 +2467,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
+  --webkit-gap: 20px;
   width: 100%;
 }
 
@@ -2518,6 +2564,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   gap: 16px;
+  --webkit-gap: 16px;
 }
 
 .element-main-d .screen-1 .main-div .voxnodes-swiper .slide_1 img {
@@ -2552,6 +2599,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
+  --webkit-gap: 10px;
 }
 
 .element-main-d .screen-1 .main-div .voxnodes-swiper .swiper-controller .spans {
@@ -2559,6 +2607,7 @@
   justify-content: center;
   justify-content: center;
   gap: 8px;
+  --webkit-gap: 8px;
 }
 
 .element-main-d .screen-1 .main-div .voxnodes-swiper .swiper-controller .spans div.active {
@@ -2586,6 +2635,7 @@
   justify-content: center;
   justify-content: center;
   gap: 8px;
+  --webkit-gap: 8px;
 }
 
 .element-main-d .screen-1 .main-div .voxnodes-swiper .swiper-controller .spans-mobile div.active {
@@ -2696,6 +2746,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  --webkit-gap: 8px;
 
   color: #FFF;
   font-family: "Manrope", Helvetica;
@@ -2892,13 +2943,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 110px;
+  -gap: 110px;
+  --webkit-gap: 110px;
 }
 
 @media screen and (max-width: 1200px) {
-  .element-main-d .header .group-9 .navlinks-buttons {
-    gap: 50px;
-  }
+.element-main-d .header .group-9 .navlinks-buttons {
+  gap: 50px;
+  --webkit-gap: 50px; 
+}
 }
 
 .element-main-d .header .group-9 .navlinks-buttons .navlinks {
@@ -2906,10 +2959,12 @@
   justify-content: center;
   align-items: center;
   gap: 48px;
+  --webkit-gap: 48px;
 }
 @media screen and (max-width: 1150px) {
   .element-main-d .header .group-9 .navlinks-buttons .navlinks {
     gap: 25px;
+    --webkit-gap: 25px;
   }
 }
 
@@ -2918,6 +2973,7 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
+  --webkit-gap: 16px;
 }
 
 .element-main-d .header .group-9 .navlinks-buttons .buttons * {
@@ -2946,6 +3002,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  --webkit-gap: 8px;
 
   color: #FFF;
   font-family: "Manrope", Helvetica;
@@ -2985,6 +3042,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  --webkit-gap: 8px;
 }
 
 .element-main-d .header .group-9 .navlinks-buttons .navlinks .text-wrapper-headerlink-withicon img {
@@ -3046,6 +3104,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 24px;
+  --webkit-gap: 24px;
 }
 
 .element-main-d .header .mobile-group-9 .mobile-main-div .mobile-navlinks .text-wrapper-headerlink {
@@ -3069,6 +3128,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  --webkit-gap: 8px;
 }
 
 .element-main-d .header .mobile-group-9 .mobile-main-div .mobile-navlinks .text-wrapper-headerlink-withicon img {
@@ -3089,6 +3149,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
+  --webkit-gap: 8px;
   padding: 12px;
   width:100%;
 }
