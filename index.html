@@ -734,7 +734,8 @@
     <script>
       $("#tigger-mode").click(function() {
         $(".mobile-main-div").toggleClass('active');
-      })
+        $(this).toggleClass('active');
+      });
 
       $('#toggle-mode').click(function() {
         $(".header").toggleClass('light');
