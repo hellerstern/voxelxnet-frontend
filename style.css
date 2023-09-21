@@ -1,11 +1,13 @@
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
 .element-main-d {
   background-color: #17181a;
-  width: 100%;
 }
 
 .element-main-d.light {
   background-color: #FFF;
-  width: 100%;
 }
 
 .element-main-d .div {
