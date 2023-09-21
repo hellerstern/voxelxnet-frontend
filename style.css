@@ -552,7 +552,12 @@ body {
   line-height: 44px;
 }
 
-
+@media screen and (max-width: 1000px) {
+  .element-main-d .screen-7 .main .title-p {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
 
 .element-main-d .screen-7 .main .title-p span {
   color: #FFF;
@@ -1036,6 +1041,13 @@ body {
   line-height: 44px;
 }
 
+ @media screen and (max-width: 1000px) {
+  .element-main-d .screen-5 .title-p {
+    font-size: 30px;
+    line-height: 36px;
+  }
+ }
+
 .element-main-d .screen-5 .title-p span {
   color: rgba(234, 234, 255, 0.40);
 }
@@ -1315,6 +1327,8 @@ body {
   .element-main-d .screen-4 .main-div .title-p {
     width: 100%;
     text-align: left;
+    font-size: 30px;
+    line-height: 46px;
   }
 }
 
@@ -1911,6 +1925,13 @@ body {
   margin-bottom: 44px;
 }
 
+@media screen and (max-width: 1000px) {
+  .element-main-d .screen-3 .main-div .voxeltech p:nth-child(1) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
 .element-main-d .screen-3 .main-div .voxeltech p:nth-child(2) {
   color: #FFF;
   font-feature-settings: 'clig' off, 'liga' off;
@@ -2414,6 +2435,7 @@ body {
 @media screen and (max-width: 1200px) {
   .element-main-d .screen-1 .main-div .left-div .p-1 {
     margin-top: 50px;
+    
   }
 }
 
@@ -2424,10 +2446,10 @@ body {
   }
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1000px) {
   .element-main-d .screen-1 .main-div .left-div .p-1 {
-    margin-top: 32px;
-    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 
