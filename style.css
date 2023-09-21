@@ -1,8 +1,11 @@
+html,
 body {
+  margin: 0;
+  padding: 0;
   width: 100vw;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
 }
+
 .element-main-d {
   background-color: #17181a;
 }
@@ -19,10 +22,12 @@ body {
   background-color: #FFF;
 }
 
-/* footer */
+/* Footer styling */
 .element-main-d .footer {
   border-radius: 64px 64px 0px 0px;
   background: #101112;
+  color: #fff;
+  /* Adding text color for better readability */
 }
 
 .element-main-d .footer .main-div {
@@ -35,6 +40,7 @@ body {
   .element-main-d .footer .main-div {
     padding: 32px 16px;
   }
+
   .element-main-d .footer {
     border-radius: 40px 40px 0px 0px;
   }
@@ -55,13 +61,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 110px;
-  --webkit-gap: 110px;
 }
 
+/* Adjust gap for smaller screens */
 @media screen and (max-width: 1200px) {
   .element-main-d .footer .footer-header .group-9 .navlinks-buttons {
     gap: 50px;
-    --webkit-gap: 50px;
   }
 }
 
@@ -70,8 +75,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 48px;
-  --webkit-gap: 48px;
 }
+
+/* Hide navlinks on smaller screens */
 @media screen and (max-width: 1000px) {
   .element-main-d .footer .footer-header .group-9 .navlinks-buttons .navlinks {
     display: none;
