@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
+  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <div class="element-main-d">
@@ -167,7 +167,7 @@
                 </div>
               </div>
             </div>
-            <div class="left-div fade-right">
+            <div class="left-div" data-aos="fade-right" data-aos-duration="2000">
               <p class="p-1">
                 Swap, earn and build on the decentralized crypto protocol
               </p>
@@ -190,7 +190,7 @@
 
               <img class="ball-btn" src="./img/ball.png" alt="ball-btn" />
             </div>
-            <div class="center-div">
+            <div class="center-div" data-aos="fade-up" data-aos-duration="2000">
               <p class="p-1">
                 Get $VXL on online broker, crypto exchanges, company, brokers and apps for a diversified approach
               </p>
@@ -220,7 +220,7 @@
         <div class="screen-2">
             <div class="main-div">
               
-              <div class="left-div">
+              <div class="left-div"  data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
                 <div class="comp103k">
                   <p>103k</p>
                   <p>people in Voxel <br /> X Revolution community. <br />Join us today</p>
@@ -242,7 +242,7 @@
                   </div>
                 </div>
               </div>
-              <div class="right-div">
+              <div class="right-div" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
                 <p>Join the</p>
                 <p>Voxel X Revolution</p>
                 <p>Voxel X Network is a community established ecosystem that believes DeFi is a vital resource to the Web3 economy in
@@ -257,7 +257,7 @@
           <div class="main">
             <div class="radius-div">
               <div class="main-div">
-                <div class="img-div">
+                <div class="img-div" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
                   <img src="./img/x-letter-voxel-large.png" />
                 </div>
   
@@ -276,7 +276,7 @@
                   </div>
                 </div>
   
-                <div class="voxeltech">
+                <div class="voxeltech" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
                   <p>Powered <br /> by Voxel Tech</p>
   
                   <p>ICX is the currency that powers the ICON blockchain and ecosystem. ICX has a variety of use cases including staking,
@@ -294,14 +294,14 @@
 
         <div class="screen-4">
           <div class="main-div">
-            <p class="title-p">
+            <p class="title-p" data-aos="zoom-out" data-aos-duration="2000">
               <span>
                 Talk briefly
               </span>
               about our Node Technology Capabilities
             </p>
 
-            <div class="tab-div">
+            <div class="tab-div" data-aos="zoom-out" data-aos-duration="2000">
               <div class="active">Public chains</div>
               <div>App specific chains</div>
               <div>Identity</div>
@@ -312,7 +312,7 @@
                 <img src="./img/voxdex/voxdex.png" />
               </div>
 
-              <div class="voxdex-info">
+              <div class="voxdex-info"  data-aos="fade-left" data-aos-duration="2000">
                 <div class="voxdex-label">
                   <img />
                 </div>
@@ -338,7 +338,7 @@
                 <img src="./img/voxdao/voxdao.png" />
               </div>
             
-              <div class="voxdao-info">
+              <div class="voxdao-info" data-aos="fade-right" data-aos-duration="2000">
                 <div class="voxdao-label">
                   <img />
                 </div>
@@ -365,7 +365,7 @@
         <div class="screen-5">
           <div class="main">
             <div class="radius-div">
-              <p class="title-p">Discover <br /> <span>our Ecosystem</span></p>
+              <p class="title-p" data-aos="zoom-out-right" data-aos-duration="2000">Discover <br /> <span>our Ecosystem</span></p>
 
               <div class="eco-controller">
                 <div></div>
@@ -457,7 +457,7 @@
               </svg>
             </div>
             <div class="final-div">
-              <div class="left">
+              <div class="left" data-aos="flip-down" data-aos-duration="2000">
 
                 <h3 class="title-h3">
                   Interconnected <br /> networks with value
@@ -477,7 +477,7 @@
 
               </div>
               <img src="./img/back4.png" />
-              <div class="right">
+              <div class="right" data-aos="flip-up" data-aos-duration="2000">
                 <h3 class="title-h3">
                   Blockchain-based
                   use cases
@@ -521,7 +521,7 @@
         <div class="screen-7">
           <div class="main">
             <div class="radius-div">
-              <p class="title-p">
+              <p class="title-p" data-aos="zoom-in-right" data-aos-duration="2000">
                 VXL 
                 <span>News</span>
               </p>
@@ -734,6 +734,7 @@
       </div>
     </div>
     <script>
+      AOS.init();
       $("#tigger-mode").click(function() {
         $(".mobile-main-div").toggleClass('active');
         $(this).toggleClass('active');
