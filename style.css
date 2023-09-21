@@ -2350,7 +2350,7 @@ body {
 }
 
 .element-main-d .screen-1 .main-div {
-  max-width: 1440px;
+  /* max-width: 1440px;
   margin: auto;
   padding: 0 48px;
 
@@ -2360,7 +2360,25 @@ body {
   gap: 20px;
   --webkit-gap: 20px;
 
-  position: relative;
+  position: relative; */
+
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 48px;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  gap: 20px;
+  --webkit-gap: 20px;
 }
 
 @media screen and (max-width: 1000px) {
