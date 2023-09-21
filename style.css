@@ -1,6 +1,7 @@
 body {
   width: 100vw;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 .element-main-d {
   background-color: #17181a;
