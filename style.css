@@ -2353,7 +2353,6 @@ body {
 
 /* ------------------------ screen1 ------------------- */
 .element-main-d .screen-1 {
-  height: calc(100vh - 96px);
   overflow: hidden;
 }
 
@@ -2548,7 +2547,7 @@ body {
 @media screen and (max-width: 1000px) {
   .element-main-d .screen-1 .main-div .right-div {
     width: 100%;
-    height: auto;
+    height: 300px;
     aspect-ratio: 664/656;
     background-size: contain;
   }
@@ -2714,6 +2713,7 @@ body {
   position: absolute;
   bottom: 60px;
   left: calc(50% - 427px / 2);
+  z-index: 1;
 }
 
 .element-main-d .screen-1 .center-div.mobile {
