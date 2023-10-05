@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Manrope:500,700,600");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 * {
   -webkit-font-smoothing: antialiased;
@@ -7,6 +8,7 @@ html,
 body {
   margin: 0px;
   height: 100%;
+  background: #18191b !important;
 }
 
 * {
@@ -20,4 +22,3 @@ button:focus-visible {
 a {
   text-decoration: none;
 }
-@import url("https://fonts.googleapis.com/css?family=Manrope:500,700,600");

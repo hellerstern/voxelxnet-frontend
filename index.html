@@ -1,828 +1,858 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-
-    <style>
-      /* body {
-        overflow-x: hidden;
-      }
-      .element-main-d {
-        width: 100vw !important;
-      } */
-    </style>
+    <link rel="stylesheet" href="./css/globals.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/scroll/SmoothScroll.css" />
+    <link rel="stylesheet" href="./css/scroll/content.css" />
+    <script src="./js/jQuery/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="./css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/motion-ui/motion-ui.min.css" />
   </head>
   <body>
     <div class="element-main-d">
-      <div class="div">
-        <header class="header">
-          <div class="group-9">
-            <img class="x-letter-voxel-2" src="img/x-letter-voxel-1-1.svg" />
-            <div class="navlinks-buttons">
-              <div class="navlinks">
-                <a class="text-wrapper-headerlink">About VXL</a>
-                <a class="text-wrapper-headerlink">Team</a>
-                <a class="text-wrapper-headerlink">Partners</a>
-                <a class="text-wrapper-headerlink">FAQ</a>
-                <a class="text-wrapper-headerlink-withicon">
-                  Whitepaper
-                  <img alt="north-east-dark-20.svg" />
-                </a>
-                <a class="text-wrapper-headerlink-withicon">
-                  Pitchdeck
-                  <img alt="north-east-dark-20.svg" />
-                </a>
-              </div>
-
-              <div class="buttons">
-                <button class="toggle-mode">
-                  <img id="toggle-mode"/>
-                </button>
-                <a class="head-buyvxl">
-                  Buy $VXL
-                  <img alt= "north-east-dark-24.svg"/>
-                </a>
-              </div>
+      <header class="header">
+        <div class="group-9">
+          <img class="x-letter-voxel-2 scale-in-up-7" src="./img/x-letter-voxel-1-1.svg" />
+          <div class="navlinks-buttons">
+            <div class="navlinks">
+              <a class="text-wrapper-headerlink scale-in-up-8">About VXL</a>
+              <a class="text-wrapper-headerlink scale-in-up-9">Team</a>
+              <a class="text-wrapper-headerlink scale-in-up-10">Partners</a>
+              <a class="text-wrapper-headerlink scale-in-up-11">FAQ</a>
+              <a class="text-wrapper-headerlink-withicon scale-in-up-12">
+                Whitepaper
+                <img alt="north-east-dark-20.svg" />
+              </a>
+              <a class="text-wrapper-headerlink-withicon scale-in-up-13">
+                Pitchdeck
+                <img alt="north-east-dark-20.svg" />
+              </a>
             </div>
-          </div>
 
-          <div class="mobile-group-9">
-            <img alt="moile-toggle" id="dark-mode" />
-
-            <img src="./img/x-letter-voxel-mo.svg" />
-
-            <img alt="mobile-menu" id="tigger-mode" />
-
-            <div class="mobile-main-div">
-              <div class="mobile-navlinks">
-                <a class="text-wrapper-headerlink">About VXL</a>
-                <a class="text-wrapper-headerlink">Team</a>
-                <a class="text-wrapper-headerlink">Partners</a>
-                <a class="text-wrapper-headerlink">FAQ</a>
-                <a class="text-wrapper-headerlink-withicon">
-                  Whitepaper
-                  <img alt="north-east-dark-20.svg" />
-                </a>
-                <a class="text-wrapper-headerlink-withicon">
-                  Pitchdeck
-                  <img alt="north-east-dark-20.svg" />
-                </a>
-
-                <a class="head-buyvxl">
-                  Buy $VXL
-                  <img alt="north-east-dark-24.svg" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </header>
-
-        <div class="screen-1">
-          <div class="main-div">
-            <div class="video-play-mobile">
-              <button>
-                <img alt="video-play" />
+            <div class="buttons">
+              <button class="toggle-mode scale-in-up-14">
+                <img id="toggle-mode" />
               </button>
-              <div>
-                <p>Watch Voxel x Network</p>
-                <p>video series</p>
-              </div>
+              <a class="head-buyvxl scale-in-up-15">
+                Buy $VXL
+                <img alt="north-east-dark-24.svg" />
+              </a>
             </div>
-
-            <div class="voxnodes-swiper">
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-            
-                  <div class="swiper-slide slide_1">
-                    <img src="./img/avatar1.png" alt="node-avatar" />
-            
-                    <div class="node-info">
-                      <p>VoxNodes Node Network</p>
-                      <p>Community run nodes and auto scaling and high speed</p>
-                    </div>
-                  </div>
-            
-                  <div class="swiper-slide slide_1">
-                    <img src="./img/avatar1.png" alt="node-avatar" />
-            
-                    <div class="node-info">
-                      <p>VoxNodes Node Network</p>
-                      <p>Community run nodes and auto scaling and high speed</p>
-                    </div>
-                  </div>
-            
-                  <div class="swiper-slide slide_1">
-                    <img src="./img/avatar1.png" alt="node-avatar" />
-            
-                    <div class="node-info">
-                      <p>VoxNodes Node Network</p>
-                      <p>Community run nodes and auto scaling and high speed</p>
-                    </div>
-                  </div>
-            
-                  <div class="swiper-slide slide_1">
-                    <img src="./img/avatar1.png" alt="node-avatar" />
-            
-                    <div class="node-info">
-                      <p>VoxNodes Node Network</p>
-                      <p>Community run nodes and auto scaling and high speed</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="swiper-controller">
-                <div class="spans">
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                  <div></div>
-                </div>
-                <p class="snapIndex" id="snapIndex">1/4</p>
-              </div>
-            </div>
-
-            <div class="center-div mobile">
-              <p class="p-1">
-                Get $VXL on online broker, crypto exchanges, company, brokers and apps for a diversified approach
-              </p>
-            
-              <div class="btn-exchanges">
-                <button class="buyvxl">
-                  Buy $VXL
-            
-                  <img src="./img/north-east-dark-24.svg" />
-                </button>
-            
-                <div class="exchanges">
-                  <img alt="exchange1" />
-                  <img alt="exchange2" />
-                  <img alt="exchange3" />
-                  <img alt="exchange4" />
-                  <img alt="exchange5" />
-                </div>
-              </div>
-            </div>
-            <div class="left-div" data-aos="fade-right" data-aos-duration="2000">
-              <p class="p-1">
-                Swap, earn and build on the decentralized crypto protocol
-              </p>
-              <p class="p-2">
-                Voxel X one of leading provider of technological platforms for projects in the emerging NFT, GameFi & Metavarse space
-              </p>
-
-              <div class="video-play">
-                <button>
-                  <img alt="video-play" />
-                </button>
-                <div>
-                  <p>Watch Voxel x Network</p>
-                  <p>video series</p>
-                </div>
-              </div>
-            </div>
-            <div class="right-div">
-              
-
-              <img class="ball-btn" src="./img/ball.png" alt="ball-btn" />
-            </div>
-            <div class="center-div" data-aos="fade-up" data-aos-duration="2000">
-              <p class="p-1">
-                Get $VXL on online broker, crypto exchanges, company, brokers and apps for a diversified approach
-              </p>
-
-              <div class="btn-exchanges">
-                <button class="buyvxl">
-                  Buy $VXL
-
-                  <img src="./img/north-east-dark-24.svg" />
-                </button>
-
-                <div class="exchanges">
-                  <img alt="exchange1" />
-                  <img alt="exchange2" />
-                  <img alt="exchange3" />
-                  <img alt="exchange4" />
-                  <img alt="exchange5" />
-                </div>
-              </div>
-            </div>
-
-
-            
           </div>
         </div>
 
-        <div class="screen-2">
-            <div class="main-div">
-              
-              <div class="left-div"  data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-                <div class="comp103k">
-                  <p>103k</p>
-                  <p>people in Voxel <br /> X Revolution community. <br />Join us today</p>
-  
-                  <div class="markets">
-                    <img alt="103k-1" />
-                    <img alt="103k-2" />
-                    <img alt="103k-3" />
-                  </div>
-                </div>
-  
-                <div class="certik">
-                  <div class="certik-main">
-                    <img src="./img/certik.svg" />
-                    <div>
-                      <p>Certik</p>
-                      <p>Official Partner</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="right-div" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-                <p>Join the</p>
-                <p>Voxel X Revolution</p>
-                <p>Voxel X Network is a community established ecosystem that believes DeFi is a vital resource to the Web3 economy in
-                acquiring generational wealth distribution through collaboration and commerce in creating the largest free decentralized
-                market the world has ever seen</p>
-                
-                <a>Open Pitchdeck <img alt="north-east-light-24" /> </a>
-              </div>
+        <div class="mobile-group-9 scale-in-up-7">
+          <img alt="moile-toggle" src="./img/togger-dark-mode.svg" class="mobile-fade-in-1" id="dark-mode" />
+
+          <img src="./img/x-letter-voxel-mo.svg" class="mobile-fade-in-2" alt="voxel-logo"/>
+
+          <img src="./img/menu-dark.svg" alt="mobile-menu" class="mobile-fade-in-3" id="tigger-mode" />
+
+          <div class="mobile-main-div">
+            <div class="mobile-navlinks">
+              <a class="text-wrapper-headerlink">About VXL</a>
+              <a class="text-wrapper-headerlink">Team</a>
+              <a class="text-wrapper-headerlink">Partners</a>
+              <a class="text-wrapper-headerlink">FAQ</a>
+              <a class="text-wrapper-headerlink-withicon">
+                Whitepaper
+                <img alt="north-east-dark-20.svg" />
+              </a>
+              <a class="text-wrapper-headerlink-withicon">
+                Pitchdeck
+                <img alt="north-east-dark-20.svg" />
+              </a>
+
+              <a class="head-buyvxl">
+                Buy $VXL
+                <img alt="north-east-dark-24.svg" />
+              </a>
             </div>
           </div>
-        <div class="screen-3">
-          <div class="main">
-            <div class="radius-div">
+        </div>
+      </header>
+      <div class="viewport">
+        <div class="smoothcontainer">
+          <div class="div">
+            <div class="screen-1">
               <div class="main-div">
-                <div class="img-div" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-                  <img src="./img/x-letter-voxel-large.png" />
-                </div>
-  
-                <div class="values">
-                  <div class="value-div">
-                    <p>VOX PRICE</p>
-                    <p>$0.7352</p>
-                  </div>
-                  <div class="value-div">
-                    <p>MARKETCS</p>
-                    <p>$165.50M</p>
-                  </div>
-                  <div class="value-div">
-                    <p>STACKING APY</p>
-                    <p>6.91%</p>
-                  </div>
-                </div>
-  
-                <div class="voxeltech" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-                  <p>Powered <br /> by Voxel Tech</p>
-  
-                  <p>ICX is the currency that powers the ICON blockchain and ecosystem. ICX has a variety of use cases including staking,
-                  network governance, collateralization on DeFi platforms, and more</p>
-  
+                <div class="video-play-mobile">
+                  <button>
+                    <img alt="video-play" />
+                  </button>
                   <div>
-                    <a>How To BUY</a>
-                    <a>Learn more <img alt="north-east" /> </a>
+                    <p>Watch Voxel x Network</p>
+                    <p>video series</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="screen-4">
-          <div class="main-div">
-            <p class="title-p" data-aos="zoom-out" data-aos-duration="2000">
-              <span>
-                Talk briefly
-              </span>
-              about our Node Technology Capabilities
-            </p>
+                <div class="voxnodes-swiper spin-in-5">
+                  <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide slide_1">
+                        <img src="./img/avatar1.png" alt="node-avatar" />
 
-            <div class="tab-div" data-aos="zoom-out" data-aos-duration="2000">
-              <div class="active">Public chains</div>
-              <div>App specific chains</div>
-              <div>Identity</div>
-            </div>
+                        <div class="node-info">
+                          <p>VoxNodes Node Network</p>
+                          <p>
+                            Community run nodes and auto scaling and high speed
+                          </p>
+                        </div>
+                      </div>
 
-            <div class="voxdex">
-              <div class="voxdex-img">
-                <img src="./img/voxdex/voxdex.png" />
-              </div>
+                      <div class="swiper-slide slide_1">
+                        <img src="./img/avatar1.png" alt="node-avatar" />
 
-              <div class="voxdex-info"  data-aos="fade-left" data-aos-duration="2000">
-                <div class="voxdex-label">
-                  <img />
-                </div>
-                <p>VoxDEX — non-custodial decentralized exchange. Developed Bridge for all main EVM Chains ie Ethereum, BSC, Arbitrum,
-                Avalanche, and Polygon</p>
+                        <div class="node-info">
+                          <p>VoxNodes Node Network</p>
+                          <p>
+                            Community run nodes and auto scaling and high speed
+                          </p>
+                        </div>
+                      </div>
 
-                <div class="btns">
-                  <a class="learn-more">
-                    Learn more
-                    <img />
-                  </a>
+                      <div class="swiper-slide slide_1">
+                        <img src="./img/avatar1.png" alt="node-avatar" />
 
-                  <a class="open-pit">
-                    Open Pitchdeck
-                    <img />
-                  </a>
-                </div>
-              </div>
-            </div>
+                        <div class="node-info">
+                          <p>VoxNodes Node Network</p>
+                          <p>
+                            Community run nodes and auto scaling and high speed
+                          </p>
+                        </div>
+                      </div>
 
-            <div class="voxdao">
-              <div class="voxdao-img">
-                <img src="./img/voxdao/voxdao.png" />
-              </div>
-            
-              <div class="voxdao-info" data-aos="fade-right" data-aos-duration="2000">
-                <div class="voxdao-label">
-                  <img />
-                </div>
-                <p>VoxDEX — non-custodial decentralized exchange. Developed Bridge for all main EVM Chains ie Ethereum, BSC,
-                  Arbitrum,
-                  Avalanche, and Polygon</p>
-            
-                <div class="btns">
-                  <a class="learn-more">
-                    Learn more
-                    <img />
-                  </a>
-            
-                  <a class="open-pit">
-                    Open Pitchdeck
-                    <img />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                      <div class="swiper-slide slide_1">
+                        <img src="./img/avatar1.png" alt="node-avatar" />
 
-        <div class="screen-5">
-          <div class="main">
-            <div class="radius-div">
-              <p class="title-p" data-aos="zoom-out-right" data-aos-duration="2000">Discover <br /> <span>our Ecosystem</span></p>
-
-              <div class="eco-controller">
-                <div></div>
-                <div></div>
-                <div></div>
-                
-              </div>
-
-              <div class="swiper ecoSwiper" style="z-index: 0;">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide ecoSlider">
-                    <div class="img-div">
-                      <img src="./img/back3.png" />
-                    </div>
-                  
-                    <div class="info">
-                      <img />
-                      <p>
-                        VoxDEX — non-custodial decentralized exchange. Developed Bridge for all main EVM Chains ie Ethereum, BSC,
-                        Arbitrum,
-                        Avalanche, and Polygon
-                      </p>
-                  
-                      <a>
-                        Learn more
-                        <img />
-                      </a>
+                        <div class="node-info">
+                          <p">VoxNodes Node Network</p>
+                          <p>
+                            Community run nodes and auto scaling and high speed
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="swiper-slide ecoSlider">
-                    <div class="img-div">
-                      <img src="./img/back3.png" />
+
+                  <div class="swiper-controller">
+                    <div class="spans">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
                     </div>
-                  
-                    <div class="info">
-                      <img />
-                      <p>
-                        VoxDEX — non-custodial decentralized exchange. Developed Bridge for all main EVM Chains ie Ethereum, BSC,
-                        Arbitrum,
-                        Avalanche, and Polygon
-                      </p>
-                  
-                      <a>
-                        Learn more
-                        <img />
-                      </a>
-                    </div>
-                  </div>
-                  <div class="swiper-slide ecoSlider">
-                    <div class="img-div">
-                      <img src="./img/back3.png" />
-                    </div>
-                  
-                    <div class="info">
-                      <img />
-                      <p>
-                        VoxDEX — non-custodial decentralized exchange. Developed Bridge for all main EVM Chains ie Ethereum, BSC,
-                        Arbitrum,
-                        Avalanche, and Polygon
-                      </p>
-                  
-                      <a>
-                        Learn more
-                        <img />
-                      </a>
-                    </div>
+                    <p class="snapIndex" id="snapIndex">1/4</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="center-div mobile">
+                  <p class="p-1">
+                    Get $VXL on online broker, crypto exchanges, company,
+                    brokers and apps for a diversified approach
+                  </p>
 
-        <div class="screen-6">
-          <div class="main-div">
-            <p class="title-p">
-              Why
-              <span>Voxel</span>
-            </p>
-            <div class="mobile-faq">
-              <h3>Interconnected networks
-              with value</h3>
-              <p>We believe the future of finance will be built on interconnected networks with value – in the form of smart money,
-              tokenised assets, and information</p>
-            </div>
-            <div class="svg-line">
-              <svg  xmlns="http://www.w3.org/2000/svg" width="2" height="50" viewBox="0 0 2 50" fill="none">
-                <path d="M1 1L1 49" stroke="#907ACC" stroke-width="2" stroke-linecap="round" />
-              </svg>
-            </div>
-            <div class="final-div">
-              <div class="left" data-aos="flip-down" data-aos-duration="2000">
-
-                <h3 class="title-h3">
-                  Interconnected <br /> networks with value
-                </h3>
-                <p>
-                  We believe the future of finance will be built on interconnected networks with value – in the form of smart money,
-                  tokenised assets, and information
-                </p>
-
-                <h3 class="title-h3">
-                  Interconnected <br /> networks with value
-                </h3>
-                <p>
-                  We believe the future of finance will be built on interconnected networks with value – in the form of smart money,
-                  tokenised assets, and information
-                </p>
-
-              </div>
-              <img src="./img/back4.png" />
-              <div class="right" data-aos="flip-up" data-aos-duration="2000">
-                <h3 class="title-h3">
-                  Blockchain-based
-                  use cases
-                </h3>
-                <p>
-                  Overledger, our platform that underpins some of the most demanding blockchain-based use cases, was designed to be used
-                  without specialist knowledge.
-                </p>
-
-                <h3 class="title-h3">
-                  Blockchain-based
-                  use cases
-                </h3>
-                <p>
-                  Overledger, our platform that underpins some of the most demanding blockchain-based use cases, was designed to be used
-                  without specialist knowledge.
-                </p>
-
-                <h3 class="title-h3">
-                  Blockchain-based
-                  use cases
-                </h3>
-                <p>
-                  Overledger, our platform that underpins some of the most demanding blockchain-based use cases, was designed to be used
-                  without specialist knowledge.
-                </p>
-
-                <h3 class="title-h3">
-                  Blockchain-based
-                  use cases
-                </h3>
-                <p>
-                  Overledger, our platform that underpins some of the most demanding blockchain-based use cases, was designed to be used
-                  without specialist knowledge.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="screen-7">
-          <div class="main">
-            <div class="radius-div">
-              <p class="title-p" data-aos="zoom-in-right" data-aos-duration="2000">
-                VXL 
-                <span>News</span>
-              </p>
-
-              <progress id="news-controller" max="1"></progress>
-
-              <div class="swiper newSwiper" style="z-index: 0;">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide newSlider news1">
-                    <div class="bgImg"></div>
-                    <div class="news-title">
-                      <div class="left">
-                        <p>/News</p>
-                        <p>Jul 18, 2023</p>
-                      </div>
-
-                      <div class="right">
-                        Voxel X Network EOM Community Update: July 2023
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide newSlider news2">
-                    <div class="bgImg"></div>
-                    <div class="news-title">
-                      <div class="left">
-                        <p>/News</p>
-                        <p>Jul 18, 2023</p>
-                      </div>
-                  
-                      <div class="right">
-                        Voxel X Network EOM Community Update: July 2023
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide newSlider news3">
-                    <div class="bgImg"></div>
-                    <div class="news-title">
-                      <div class="left">
-                        <p>/News</p>
-                        <p>Jul 18, 2023</p>
-                      </div>
-                      <div class="right">
-                        Voxel X Network EOM Community Update: July 2023
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide newSlider news1">
-                    <div class="bgImg"></div>
-                    <div class="news-title">
-                      <div class="left">
-                        <p>/News</p>
-                        <p>Jul 18, 2023</p>
-                      </div>
-                  
-                      <div class="right">
-                        Voxel X Network EOM Community Update: July 2023
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="swiper-slide newSlider news2">
-                    <div class="bgImg"></div>
-                    <div class="news-title">
-                      <div class="left">
-                        <p>/News</p>
-                        <p>Jul 18, 2023</p>
-                      </div>
-                  
-                      <div class="right">
-                        Voxel X Network EOM Community Update: July 2023
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="swiper-slide newSlider news3">
-                    <div class="bgImg"></div>
-                    <div class="news-title">
-                      <div class="left">
-                        <p>/News</p>
-                        <p>Jul 18, 2023</p>
-                      </div>
-                      <div class="right">
-                        Voxel X Network EOM Community Update: July 2023
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer">
-          <div class="main-div">
-            <div class="footer-header">
-              <div class="group-9">
-                <img class="x-letter-voxel-2" src="img/x-letter-voxel-1-1.svg" />
-                <div class="navlinks-buttons">
-                  <div class="navlinks">
-                    <a class="text-wrapper-headerlink">About VXL</a>
-                    <a class="text-wrapper-headerlink">Team</a>
-                    <a class="text-wrapper-headerlink">Partners</a>
-                    <a class="text-wrapper-headerlink">FAQ</a>
-                    <a class="text-wrapper-headerlink-withicon">
-                      Whitepaper
-                      <img alt="north-east-dark-20.svg" />
-                    </a>
-                    <a class="text-wrapper-headerlink-withicon">
-                      Pitchdeck
-                      <img alt="north-east-dark-20.svg" />
-                    </a>
-                  </div>
-              
-                  <div class="buttons">
-                    <a class="head-buyvxl">
+                  <div class="btn-exchanges">
+                    <button class="buyvxl">
                       Buy $VXL
-                      <img alt="north-east-dark-24.svg" />
-                    </a>
+
+                      <img src="./img/north-east-dark-24.svg" />
+                    </button>
+
+                    <div class="exchanges">
+                      <img alt="exchange1" />
+                      <img alt="exchange2" />
+                      <img alt="exchange3" />
+                      <img alt="exchange4" />
+                      <img alt="exchange5" />
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="left-div"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                >
+                  <p class="p-1 fade-in-1">
+                    Swap, earn and build on the decentralized crypto protocol
+                  </p>
+                  <p class="p-2 slide-text-2 fade-in-2">
+                    Voxel X one of leading provider of technological platforms
+                    for projects in the emerging NFT, GameFi & Metavarse space
+                  </p>
+
+                  <div class="video-play fade-in-3">
+                    <button>
+                      <img alt="video-play" />
+                    </button>
+                    <div>
+                      <p>Watch Voxel x Network</p>
+                      <p>video series</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-div hinge-in-from-bottom-4">
+                  <img class="back1" src="./img/back1.png" alt="back1" />
+                  <img class="ball-btn" src="./img/ball.png" alt="ball-btn" />
+                </div>
+                <div
+                  class="center-div spin-in-6"
+                >
+                  <p class="p-1">
+                    Get $VXL on online broker, crypto exchanges, company,
+                    brokers and apps for a diversified approach
+                  </p>
+
+                  <div class="btn-exchanges">
+                    <button class="buyvxl">
+                      Buy $VXL
+
+                      <img src="./img/north-east-dark-24.svg" />
+                    </button>
+
+                    <div class="exchanges">
+                      <img alt="exchange1" />
+                      <img alt="exchange2" />
+                      <img alt="exchange3" />
+                      <img alt="exchange4" />
+                      <img alt="exchange5" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="contact">
-              <div class="mail-address">
-                <div class="mail">
-                  <p>email</p>
-                  <p>hello@voxel.io</p>
+
+            <div class="screen-2">
+              <div class="main-div">
+                <div
+                  class="left-div"
+                  data-aos="fade-right"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="2000"
+                >
+                  <div class="comp103k">
+                    <p>103k</p>
+                    <p>
+                      people in Voxel <br />
+                      X Revolution community. <br />Join us today
+                    </p>
+
+                    <div class="markets">
+                      <img alt="103k-1" />
+                      <img alt="103k-2" />
+                      <img alt="103k-3" />
+                    </div>
+                  </div>
+
+                  <div class="certik">
+                    <img class="certik-background" src="./img/back2.png" alt="certik-background" />
+                    <div class="certik-main">
+                      <img src="./img/certik.svg" alt="certik-svg" />
+                      <div>
+                        <p>Certik</p>
+                        <p>Official Partner</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="address">
-                  <p>Voxel X Network Inc</p>
-                  <p>World Trade Center 200 - B, Suite 228Calle 53 Este, MarbellaPanama, PA , 0832 - 01626
-                  Republica de Panama</p>
+                <div
+                  class="right-div"
+                  data-aos="fade-left"
+                  data-aos-anchor-placement="top-bottom"
+                  data-aos-duration="2000"
+                >
+                  <p>Join the</p>
+                  <p>Voxel X Revolution</p>
+                  <p>
+                    Voxel X Network is a community established ecosystem that
+                    believes DeFi is a vital resource to the Web3 economy in
+                    acquiring generational wealth distribution through
+                    collaboration and commerce in creating the largest free
+                    decentralized market the world has ever seen
+                  </p>
+
+                  <a>Open Pitchdeck <img alt="north-east-light-24" /> </a>
                 </div>
               </div>
+            </div>
+            <div class="screen-3">
+              <div class="main">
+                <div class="radius-div">
+                  <div class="main-div">
+                    <div
+                      class="img-div"
+                      data-aos="fade-up"
+                      data-aos-anchor-placement="top-bottom"
+                      data-aos-duration="2000"
+                    >
+                      <img src="./img/x-letter-voxel-large.png" />
+                    </div>
 
-              <div class="social">
-                <a href="https://discord.com">
-                  <img />
-                </a>
-                <a href="https://telegram.com">
-                  <img />
-                </a>
-                <a href="https://facebook.com">
-                  <img />
-                </a>
-                <a href="https://twitter.com">
-                  <img />
-                </a>
-                <a href="https://instagram.com">
-                  <img />
-                </a>
+                    <div class="values">
+                      <div class="value-div" data-aos="zoom-in-down">
+                        <p>VOX PRICE</p>
+                        <p>$0.7352</p>
+                      </div>
+                      <div class="value-div" data-aos="fade-up">
+                        <p>MARKETCS</p>
+                        <p>$165.50M</p>
+                      </div>
+                      <div class="value-div" data-aos="zoom-in-up">
+                        <p>STACKING APY</p>
+                        <p>6.91%</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="voxeltech"
+                      data-aos="fade-down"
+                      data-aos-anchor-placement="top-bottom"
+                      data-aos-duration="2000"
+                    >
+                      <p>
+                        Powered <br />
+                        by Voxel Tech
+                      </p>
+
+                      <p>
+                        ICX is the currency that powers the ICON blockchain and
+                        ecosystem. ICX has a variety of use cases including
+                        staking, network governance, collateralization on DeFi
+                        platforms, and more
+                      </p>
+
+                      <div>
+                        <a>How To BUY</a>
+                        <a>Learn more <img alt="north-east" /> </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="buyon">
-              <p>Buy $VXL on</p>
+            <div class="screen-4">
+              <div class="main-div">
+                <p class="title-p" data-aos="zoom-out" data-aos-duration="2000">
+                  <span> Talk briefly </span>
+                  about our Node Technology Capabilities
+                </p>
 
-              <div>
-                <a href="#">
-                  <img />
-                </a>
-                <a href="#">
-                  <img />
-                </a>
-                <a href="#">
-                  <img />
-                </a>
-                <a href="#">
-                  <img />
-                </a>
-                <a href="#">
-                  <img />
-                </a>
-                <a href="#">
-                  <img />
-                </a>
+                <div
+                  class="tab-div"
+                  data-aos="zoom-out"
+                  data-aos-duration="2000"
+                >
+                  <div class="active">Public chains</div>
+                  <div>App specific chains</div>
+                  <div>Identity</div>
+                </div>
+
+                <div class="voxdex">
+                  <div class="voxdex-img">
+                    <img src="./img/voxdex/voxdex.png" />
+                  </div>
+
+                  <div
+                    class="voxdex-info"
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
+                  >
+                    <div class="voxdex-label">
+                      <img />
+                    </div>
+                    <p>
+                      VoxDEX — non-custodial decentralized exchange. Developed
+                      Bridge for all main EVM Chains ie Ethereum, BSC, Arbitrum,
+                      Avalanche, and Polygon
+                    </p>
+
+                    <div class="btns">
+                      <a class="learn-more">
+                        Learn more
+                        <img />
+                      </a>
+
+                      <a class="open-pit">
+                        Open Pitchdeck
+                        <img />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="voxdao">
+                  <div class="voxdao-img">
+                    <img src="./img/voxdao/voxdao.png" />
+                  </div>
+
+                  <div
+                    class="voxdao-info"
+                    data-aos="fade-right"
+                    data-aos-duration="2000"
+                  >
+                    <div class="voxdao-label">
+                      <img />
+                    </div>
+                    <p>
+                      VoxDEX — non-custodial decentralized exchange. Developed
+                      Bridge for all main EVM Chains ie Ethereum, BSC, Arbitrum,
+                      Avalanche, and Polygon
+                    </p>
+
+                    <div class="btns">
+                      <a class="learn-more">
+                        Learn more
+                        <img />
+                      </a>
+
+                      <a class="open-pit">
+                        Open Pitchdeck
+                        <img />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="findon">
-              <p>Find $VXL on</p>
-              <div>
-                <a href="#">
-                  <img />
-                </a>
-                <a href="#">
-                  <img />
-                </a>
-                <a href="#">
-                  <img />
-                </a>
+            <div class="screen-5">
+              <div class="main">
+                <div class="radius-div">
+                  <p
+                    class="title-p"
+                    data-aos="zoom-out-right"
+                    data-aos-duration="2000"
+                  >
+                    Discover <br />
+                    <span>our Ecosystem</span>
+                  </p>
+
+                  <div class="eco-controller">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+
+                  <div class="swiper ecoSwiper" style="z-index: 0">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide ecoSlider">
+                        <div class="img-div">
+                          <img src="./img/back3.png" />
+                        </div>
+
+                        <div class="info">
+                          <img />
+                          <p>
+                            VoxDEX — non-custodial decentralized exchange.
+                            Developed Bridge for all main EVM Chains ie
+                            Ethereum, BSC, Arbitrum, Avalanche, and Polygon
+                          </p>
+
+                          <a>
+                            Learn more
+                            <img />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide ecoSlider">
+                        <div class="img-div">
+                          <img src="./img/back3.png" />
+                        </div>
+
+                        <div class="info">
+                          <img />
+                          <p>
+                            VoxDEX — non-custodial decentralized exchange.
+                            Developed Bridge for all main EVM Chains ie
+                            Ethereum, BSC, Arbitrum, Avalanche, and Polygon
+                          </p>
+
+                          <a>
+                            Learn more
+                            <img />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide ecoSlider">
+                        <div class="img-div">
+                          <img src="./img/back3.png" />
+                        </div>
+
+                        <div class="info">
+                          <img />
+                          <p>
+                            VoxDEX — non-custodial decentralized exchange.
+                            Developed Bridge for all main EVM Chains ie
+                            Ethereum, BSC, Arbitrum, Avalanche, and Polygon
+                          </p>
+
+                          <a>
+                            Learn more
+                            <img />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div class="allright">
-              <p class="all-right">
-                ®2023 | All rights reserved
-              </p>
+            <div class="screen-6">
+              <div class="main-div">
+                <p class="title-p">
+                  Why
+                  <span>Voxel</span>
+                </p>
+                <div class="mobile-faq">
+                  <h3>Interconnected networks with value</h3>
+                  <p>
+                    We believe the future of finance will be built on
+                    interconnected networks with value – in the form of smart
+                    money, tokenised assets, and information
+                  </p>
+                </div>
+                <div class="svg-line">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2"
+                    height="50"
+                    viewBox="0 0 2 50"
+                    fill="none"
+                  >
+                    <path
+                      d="M1 1L1 49"
+                      stroke="#907ACC"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <div class="final-div">
+                  <div
+                    class="left"
+                    data-aos="flip-down"
+                    data-aos-duration="2000"
+                  >
+                    <h3 class="title-h3">
+                      Interconnected <br />
+                      networks with value
+                    </h3>
+                    <p>
+                      We believe the future of finance will be built on
+                      interconnected networks with value – in the form of smart
+                      money, tokenised assets, and information
+                    </p>
 
-              <div>
-                <p><span>made by</span>  <br /> Roobinium</p>
+                    <h3 class="title-h3">
+                      Interconnected <br />
+                      networks with value
+                    </h3>
+                    <p>
+                      We believe the future of finance will be built on
+                      interconnected networks with value – in the form of smart
+                      money, tokenised assets, and information
+                    </p>
+                  </div>
+                  <img src="./img/back4.png" />
+                  <div
+                    class="right"
+                    data-aos="flip-up"
+                    data-aos-duration="2000"
+                  >
+                    <h3 class="title-h3">Blockchain-based use cases</h3>
+                    <p>
+                      Overledger, our platform that underpins some of the most
+                      demanding blockchain-based use cases, was designed to be
+                      used without specialist knowledge.
+                    </p>
+
+                    <h3 class="title-h3">Blockchain-based use cases</h3>
+                    <p>
+                      Overledger, our platform that underpins some of the most
+                      demanding blockchain-based use cases, was designed to be
+                      used without specialist knowledge.
+                    </p>
+
+                    <h3 class="title-h3">Blockchain-based use cases</h3>
+                    <p>
+                      Overledger, our platform that underpins some of the most
+                      demanding blockchain-based use cases, was designed to be
+                      used without specialist knowledge.
+                    </p>
+
+                    <h3 class="title-h3">Blockchain-based use cases</h3>
+                    <p>
+                      Overledger, our platform that underpins some of the most
+                      demanding blockchain-based use cases, was designed to be
+                      used without specialist knowledge.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="screen-7">
+              <div class="main">
+                <div class="radius-div">
+                  <p
+                    class="title-p"
+                    data-aos="zoom-in-right"
+                    data-aos-duration="2000"
+                  >
+                    VXL
+                    <span>News</span>
+                  </p>
+
+                  <progress id="news-controller" max="1"></progress>
+
+                  <div class="swiper newSwiper" style="z-index: 0">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide newSlider news1">
+                        <div class="bgImg"></div>
+                        <div class="news-title">
+                          <div class="left">
+                            <p>/News</p>
+                            <p>Jul 18, 2023</p>
+                          </div>
+
+                          <div class="right">
+                            Voxel X Network EOM Community Update: July 2023
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide newSlider news2">
+                        <div class="bgImg"></div>
+                        <div class="news-title">
+                          <div class="left">
+                            <p>/News</p>
+                            <p>Jul 18, 2023</p>
+                          </div>
+
+                          <div class="right">
+                            Voxel X Network EOM Community Update: July 2023
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide newSlider news3">
+                        <div class="bgImg"></div>
+                        <div class="news-title">
+                          <div class="left">
+                            <p>/News</p>
+                            <p>Jul 18, 2023</p>
+                          </div>
+                          <div class="right">
+                            Voxel X Network EOM Community Update: July 2023
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide newSlider news1">
+                        <div class="bgImg"></div>
+                        <div class="news-title">
+                          <div class="left">
+                            <p>/News</p>
+                            <p>Jul 18, 2023</p>
+                          </div>
+
+                          <div class="right">
+                            Voxel X Network EOM Community Update: July 2023
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide newSlider news2">
+                        <div class="bgImg"></div>
+                        <div class="news-title">
+                          <div class="left">
+                            <p>/News</p>
+                            <p>Jul 18, 2023</p>
+                          </div>
+
+                          <div class="right">
+                            Voxel X Network EOM Community Update: July 2023
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide newSlider news3">
+                        <div class="bgImg"></div>
+                        <div class="news-title">
+                          <div class="left">
+                            <p>/News</p>
+                            <p>Jul 18, 2023</p>
+                          </div>
+                          <div class="right">
+                            Voxel X Network EOM Community Update: July 2023
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer">
+              <div class="main-div">
+                <div class="footer-header">
+                  <div class="group-9">
+                    <img
+                      class="x-letter-voxel-2"
+                      src="img/x-letter-voxel-1-1.svg"
+                    />
+                    <div class="navlinks-buttons">
+                      <div class="navlinks">
+                        <a class="text-wrapper-headerlink">About VXL</a>
+                        <a class="text-wrapper-headerlink">Team</a>
+                        <a class="text-wrapper-headerlink">Partners</a>
+                        <a class="text-wrapper-headerlink">FAQ</a>
+                        <a class="text-wrapper-headerlink-withicon">
+                          Whitepaper
+                          <img alt="north-east-dark-20.svg" />
+                        </a>
+                        <a class="text-wrapper-headerlink-withicon">
+                          Pitchdeck
+                          <img alt="north-east-dark-20.svg" />
+                        </a>
+                      </div>
+
+                      <div class="buttons">
+                        <a class="head-buyvxl">
+                          Buy $VXL
+                          <img alt="north-east-dark-24.svg" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contact">
+                  <div class="mail-address">
+                    <div class="mail">
+                      <p>email</p>
+                      <p>hello@voxel.io</p>
+                    </div>
+                    <div class="address">
+                      <p>Voxel X Network Inc</p>
+                      <p>
+                        World Trade Center 200 - B, Suite 228Calle 53 Este,
+                        MarbellaPanama, PA , 0832 - 01626 Republica de Panama
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="social">
+                    <a href="https://discord.com">
+                      <img />
+                    </a>
+                    <a href="https://telegram.com">
+                      <img />
+                    </a>
+                    <a href="https://facebook.com">
+                      <img />
+                    </a>
+                    <a href="https://twitter.com">
+                      <img />
+                    </a>
+                    <a href="https://instagram.com">
+                      <img />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="buyon">
+                  <p>Buy $VXL on</p>
+
+                  <div>
+                    <a href="#">
+                      <img />
+                    </a>
+                    <a href="#">
+                      <img />
+                    </a>
+                    <a href="#">
+                      <img />
+                    </a>
+                    <a href="#">
+                      <img />
+                    </a>
+                    <a href="#">
+                      <img />
+                    </a>
+                    <a href="#">
+                      <img />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="findon">
+                  <p>Find $VXL on</p>
+                  <div>
+                    <a href="#">
+                      <img />
+                    </a>
+                    <a href="#">
+                      <img />
+                    </a>
+                    <a href="#">
+                      <img />
+                    </a>
+                  </div>
+                </div>
+
+                <div class="allright">
+                  <p class="all-right">®2023 | All rights reserved</p>
+
+                  <div>
+                    <p>
+                      <span>made by</span> <br />
+                      Roobinium
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/scroll/SmoothScroll.min.js"></script>
+    <script src="./js/scroll/script.js"></script>
+    <script src="./js/motion-ui/motion-ui.min.js"></script>
     <script>
-      // AOS.init();
-      $("#tigger-mode").click(function() {
-        $(".mobile-main-div").toggleClass('active');
-        $(this).toggleClass('active');
-      });
-
-      $('#toggle-mode').click(function() {
-        $(".header").toggleClass('light');
-        $(".screen-1").toggleClass('light');
-        $(".screen-2").toggleClass('light');
-        $(".screen-3").toggleClass('light');
-        $(".screen-4").toggleClass('light');
-        $(".screen-5").toggleClass('light');
-        $(".screen-6").toggleClass('light');
-        $(".screen-7").toggleClass('light');
-        $(".footer").toggleClass('light');
-        $(".element-main-d").toggleClass('light');
-
-      })
-      $('#dark-mode').click(function () {
-        $(".header").toggleClass('light');
-        $(".screen-1").toggleClass('light');
-        $(".screen-2").toggleClass('light');
-        $(".screen-3").toggleClass('light');
-        $(".screen-4").toggleClass('light');
-        $(".screen-5").toggleClass('light');
-        $(".screen-7").toggleClass('light');
-        $(".footer").toggleClass('light');
-        $(".element-main-d").toggleClass('light');
-      })
-
-       $(".tab-div div").click(function () {
-        $(".tab-div div").removeClass('active');
-        $(this).addClass('active');
-      })
-
-      let swiper = new Swiper(".mySwiper", {
-          pagination: {
-            el: ".swiper-pagination",
-          },
-      });
-      $(".spans").find('div').eq(swiper.snapIndex).toggleClass('active');
-      $(".eco-controller").find('div').eq(swiper.snapIndex).toggleClass('active');
-      
-
-      swiper.on('slideChange', function(e) {
-        $("#snapIndex").text(e.activeIndex + 1 + "/4");
-
-        $(".spans").find('div').removeClass('active');
-        $(".spans").find('div').eq(e.activeIndex).toggleClass('active');
-      });
-
-      let ecoSwiper = new Swiper('.ecoSwiper', {
-        spaceBetween: 16,
-        slidesPerView: 'auto',
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-
-      ecoSwiper.on('slideChange', function(e) {
-        $(".eco-controller").find('div').removeClass('active');
-        $(".eco-controller").find('div').eq(e.activeIndex).toggleClass('active');
-      });
-
-      let newSwiper = new Swiper('.newSwiper',  {
-        spaceBetween: 16,
-        slidesPerView: 'auto',
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      })
-
-      newSwiper.on('slideChange', function(e) {
-        $("#news-controller").attr("value", newSwiper.progress);
-        if (e.isEnd) {
-          console.log("?what?");
-          $("#news-controller").attr("value", 1);
-        }
-      });
+      // MotionUI.animateIn(".scale-in-up-7", "delay-1s scale-in-up");
+      MotionUI.animateIn(".fade-in-1", "delay-1s fade-in");
+      MotionUI.animateIn(".fade-in-2", "delay-2s fade-in");
+      MotionUI.animateIn(".fade-in-3", "delay-3s fade-in");
+      MotionUI.animateIn(".mobile-fade-in-1", "delay-1s fade-in");
+      MotionUI.animateIn(".mobile-fade-in-2", "delay-2s fade-in");
+      MotionUI.animateIn(".mobile-fade-in-3", "delay-3s fade-in");
+      MotionUI.animateIn(".hinge-in-from-bottom-4", "delay-4s hinge-in-from-left");
+      MotionUI.animateIn(".spin-in-5", "delay-5s spin-in");
+      MotionUI.animateIn(".spin-in-6", "delay-6s spin-in");
+      MotionUI.animateIn(".scale-in-up-7", "delay-7s scale-in-up");
+      MotionUI.animateIn(".scale-in-up-8", "delay-8s scale-in-up");
+      MotionUI.animateIn(".scale-in-up-9", "delay-9s scale-in-up");
+      MotionUI.animateIn(".scale-in-up-10", "delay-10s scale-in-up");
+      MotionUI.animateIn(".scale-in-up-11", "delay-11s scale-in-up");
+      MotionUI.animateIn(".scale-in-up-12", "delay-12s scale-in-up");
+      MotionUI.animateIn(".scale-in-up-13", "delay-13s scale-in-up");
+      MotionUI.animateIn(".scale-in-up-14", "delay-14s scale-in-up");
+      MotionUI.animateIn(".scale-in-up-15", "delay-15s scale-in-up");
     </script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+  </script>
   </body>
 </html>

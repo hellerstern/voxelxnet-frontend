@@ -1,0 +1,17 @@
+::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.viewport {
+  width: 100%;
+  margin: 0 auto;
+}
