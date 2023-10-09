@@ -38,9 +38,6 @@ let swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 });
-$(".spans").find("div").eq(swiper.snapIndex).toggleClass("active");
-$(".eco-controller").find("div").eq(swiper.snapIndex).toggleClass("active");
-$(".new-controller").find("div").eq(swiper.snapIndex).toggleClass("active");
 
 swiper.on("slideChange", function (e) {
   $("#snapIndex").text(e.activeIndex + 1 + "/4");
@@ -74,3 +71,7 @@ newSwiper.on("slideChange", function (e) {
   $(".new-controller").find("div").removeClass("active");
   $(".new-controller").find("div").eq(e.activeIndex).toggleClass("active");
 });
+
+$(".spans").find("div").eq(swiper.snapIndex).toggleClass("active");
+$(".eco-controller").find("div").eq(ecoSwiper.snapIndex).toggleClass("active");
+$(".new-controller").find("div").eq(newSwiper.snapIndex).toggleClass("active");

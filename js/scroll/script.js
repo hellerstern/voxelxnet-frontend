@@ -3,7 +3,7 @@
 const isTouchDevice = "ontouchstart" in document.documentElement;
 
 disableScroll();
-if (!isTouchDevice) smoothScroll();
+if (!isTouchDevice && !isSafari && !isIOS) smoothScroll();
 
 window.onresize = () => {
   resizeBodyHeight();

@@ -2352,11 +2352,12 @@ body {
   border-radius: 16px;
   position: absolute;
   top: 0;
-  transition: all linear 0.3s;
+  transition: all linear 1s;
+  z-index: -1;
 }
 
 .element-main-d .screen-2 .main-div .left-div .certik-background:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 550px) {
@@ -2747,6 +2748,7 @@ body {
   top: 0;
   right: 48px;
   z-index: 1;
+  cursor: pointer;
 
   border-radius: 16px 16px 0px 16px;
   border: 1px solid rgba(234, 234, 255, 0.08);
