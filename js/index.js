@@ -40,6 +40,7 @@ let swiper = new Swiper(".mySwiper", {
 });
 $(".spans").find("div").eq(swiper.snapIndex).toggleClass("active");
 $(".eco-controller").find("div").eq(swiper.snapIndex).toggleClass("active");
+$(".new-controller").find("div").eq(swiper.snapIndex).toggleClass("active");
 
 swiper.on("slideChange", function (e) {
   $("#snapIndex").text(e.activeIndex + 1 + "/4");
@@ -70,9 +71,6 @@ let newSwiper = new Swiper(".newSwiper", {
 });
 
 newSwiper.on("slideChange", function (e) {
-  $("#news-controller").attr("value", newSwiper.progress);
-  if (e.isEnd) {
-    console.log("?what?");
-    $("#news-controller").attr("value", 1);
-  }
+  $(".new-controller").find("div").removeClass("active");
+  $(".new-controller").find("div").eq(e.activeIndex).toggleClass("active");
 });
