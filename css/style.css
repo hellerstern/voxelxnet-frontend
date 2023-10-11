@@ -931,7 +931,6 @@ body {
   justify-content: center;
   gap: 92px;
   --webkit-gap: 92px;
-  height: 336px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -941,24 +940,53 @@ body {
   }
 }
 
-.element-main-d .screen-6 .main-div .final-div div {
+.element-main-d .screen-6 .main-div .final-div div div {
   width: 250px;
   height: 100%;
-  overflow-y: auto;
+  opacity: 0.7;
+  transition: all linear 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.element-main-d .screen-6 .main-div .final-div div div:hover {
+  opacity: 1;
+}
+
+.element-main-d .screen-6 .main-div .final-div .left div:hover div {
+  opacity: 1;
+}
+
+.element-main-d .screen-6 .main-div .final-div .left div .voxel-element-line {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: #907acc;
+  top: 0;
+  right: -20px;
+  transition: all linear 0.3s;
+  opacity: 0;
+}
+
+.element-main-d .screen-6 .main-div .final-div .right div:hover div {
+  opacity: 1;
+}
+
+.element-main-d .screen-6 .main-div .final-div .right div .voxel-element-line {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: #907acc;
+  top: 0;
+  left: -20px;
+  transition: all linear 0.3s;
+  opacity: 0;
 }
 
 @media screen and (max-width: 1000px) {
   .element-main-d .screen-6 .main-div .final-div div {
     display: none;
   }
-}
-
-.element-main-d .screen-6 .main-div .final-div div::-webkit-scrollbar {
-  width: 1px;
-}
-
-.element-main-d .screen-6 .main-div .final-div div::-webkit-scrollbar-thumb {
-  background: #907acc;
 }
 
 .element-main-d .screen-6 .main-div .final-div .left {
@@ -978,17 +1006,6 @@ body {
   .element-main-d .screen-6 .main-div .final-div img {
     width: 100%;
   }
-}
-
-.element-main-d .screen-6 .main-div .final-div .right::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 12px;
-  height: 100%;
-  background: transparent;
-  z-index: 9999;
 }
 
 .element-main-d .screen-6 .main-div .final-div div h3 {
